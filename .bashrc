@@ -26,9 +26,6 @@ fi
 
 unset rc
 
-# Dotfiles bare repo settings
-alias gitdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 # My prompt customization
 source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
