@@ -30,11 +30,7 @@ unset rc
 alias gitdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # My prompt customization
-#source ~/.git-prompt.sh
-#export GIT_PS1_SHOWDIRTYSTATE=1
-#export GIT_PS1_SHOWUPSTREAM="auto"
-#PS1='[\u@\h \w]$(__git_ps1 " (%s)")\n\\$ '
-
-# Replacement of my custom settings with Starship
-eval "$(starship init bash)"
-
+source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWUPSTREAM="verbose"
+PS1='\n\e[1;32m\w\e[1;37m  at \t  $(__git_ps1 "(%s)")\e[0m\n> '
